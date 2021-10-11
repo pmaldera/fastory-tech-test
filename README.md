@@ -54,7 +54,6 @@
 #### Bonus
 Malgré les tensions entre l'Empire et le peuple Wookiee, il est étonnant de trouver dans leur base de données un moyen de traduire dans cette langue. ❌ (no time)
 
-
 ## Stacks
 ### Server
 - [typescript](https://www.typescriptlang.org/) and types for all used packages.

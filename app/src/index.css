@@ -1,7 +1,26 @@
+@font-face {
+  font-family: 'jedifont';
+  src: url("assets/Starjedi.ttf") format('truetype');
+}
+
 html {
   height: 100%;
-  overflow: hidden;
+  overflow-y: scroll;
   background-color: black;
+  
+}
+
+h2 {
+  text-align: center;
+}
+
+h1, h2, h3, label {
+  font-family: 'jedifont';
+}
+
+button {
+  background: none;
+  color: yellow;
 }
 
 input, a, p, h1, h2, h3, select, option {
@@ -74,7 +93,7 @@ code {
 }
 
 .wall {
-  background:url('background.png');
+  background:url('assets/background.png');
   background-size: cover;
   width: 100%;
   height: 100%;

@@ -18,7 +18,8 @@ export function getIdsFromUrls(urls?:Array<string>):Array<number> {
         let numbers:Array<number> = [];
         for(const url of urls) {
             try {
-                numbers.push(parseInt(url.replace(/\D+/g, '')));
+                const tempArray = url.split('/');
+                numbers.push(parseInt(tempArray[tempArray.length-2]));
             } catch(e) {
                 console.error(e);
             }

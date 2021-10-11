@@ -7,7 +7,7 @@ export const config = {
         appPort: process.env.appPort || 3000 // local app server port
     },
     api: {
-        remoteAPIUrl: process.env.remoteAPIUrl || "https://swapi.dev/api",
+        remoteAPIUrl: process.env.remoteAPIUrl || "https://swapi.py4e.com/api",
     },
     auth: {
         cookie: {

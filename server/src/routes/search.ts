@@ -33,6 +33,10 @@ export const searchRoute = {
         return h.response(data).code(200);
     },
     options: {
+        cache: {
+            expiresIn: 3600 * 1000, // one hour cache lifespan
+            privacy: 'private',
+        },
         validate: {
             query: Joi.object({
                 query: Joi.string().allow(''),

@@ -22,7 +22,6 @@ export function EntityInfo(name:string, value: any) {
 
 /**
  * Component used to print related entities.
- * Offers a button to load asynchronously, not necessary (try removing initialDataLoading from useEffet to try)
  * @param {Array<number>} ids Ids of the related entities
  * @param {Array<IEntity>} entities Related entities 
  * @param {string} entityName Entity name, used in URLs and such
@@ -38,6 +37,10 @@ export function EntityList(ids:Array<number>, entities:Array<IEntity>, entityNam
                 entities.map(entity => {
                     return <li><Link to={`/${entityName}/${entity.id}`}>{entity.name || entity.title}</Link></li>
                 })
+            }
+            {ids.length !== entities.length ?
+                <li>Loading...</li> // Yes, a cute loader could be better here.
+            : ''
             }
             </ul>
         </fieldset>

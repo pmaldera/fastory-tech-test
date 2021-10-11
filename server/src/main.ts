@@ -19,9 +19,13 @@ async function initServer(): Promise<Server> {
         validateFunc: checkSession
     })
     server.auth.default('session');
+
+    // TS is giving me a hard time about route option because I'm not giving every value for each sub-part.
     //@ts-ignore
     server.route(loginRoute);
+    //@ts-ignore
     server.route(entityRoute)
+    //@ts-ignore
     server.route(searchRoute);
 
     return server;
@@ -29,6 +33,7 @@ async function initServer(): Promise<Server> {
 
 async function startServer(server:Server): Promise<void> {
     console.log(`Listening on ${server.settings.host}:${server.settings.port}`);
+    console.log(`Remote API is ${config.api.remoteAPIUrl}`);
     return server.start();
 };
 

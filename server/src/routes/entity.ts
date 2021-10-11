@@ -11,6 +11,10 @@ export const entityRoute = {
         return h.response(data).code(200);
     },
     options: {
+        cache: {
+            expiresIn: 3600 * 1000, // one hour cache lifespan
+            privacy: 'private',
+        },
         validate: {
             params: Joi.object({
                 // Unknown entity name are forbidden

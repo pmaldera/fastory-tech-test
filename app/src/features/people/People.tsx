@@ -40,9 +40,9 @@ function PeoplePage(props: PeoplePageProps) {
     
     useEffect(() => {
             dispatch(getPeopleDataById({id:id}));
-            initialDataLoading();
             if(people?.homeworld)
                 dispatch(getPlanetDataById({id: getIdsFromUrls([people?.homeworld])[0]}))
+            initialDataLoading();
                 
         },
         [people, id, dispatch, homeworld, initialDataLoading]

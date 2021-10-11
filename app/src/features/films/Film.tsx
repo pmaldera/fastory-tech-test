@@ -66,7 +66,7 @@ function FilmPage(props: FilmPageProps) {
                     <p><b>Opening crawl:</b> {film.opening_crawl || 'Unknown'}</p>
                 </fieldset>
                 <fieldset>
-                    <legend>Team</legend>
+                    <legend><h3>Team</h3></legend>
                     <p><b>Directors(s):</b> {film.director || 'Unknown'}</p>
                     <p><b>Producer(s):</b> {film.producer || 'Unknown'}</p>
                 </fieldset>
