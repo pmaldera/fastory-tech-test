@@ -1,0 +1,27 @@
+{
+  "name": "fastory-test",
+  "version": "1.0.0",
+  "description": "Fastory technical test",
+  "main": "lib/main.js",
+  "type": "module",
+  "scripts": {
+    "dev:compile": "npm run tsc && node lib/main.js",
+    "tsc": "tsc",
+    "dev": "nodemon -e ts --exec \"npm run dev:compile\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pierre MALDERA",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/cookie": "^11.0.2",
+    "@hapi/hapi": "^20.2.0",
+    "@types/bcrypt": "^5.0.0",
+    "@types/hapi__cookie": "^10.1.3",
+    "@types/hapi__hapi": "^20.0.9",
+    "@types/node": "^16.10.3",
+    "bcrypt": "^5.0.1",
+    "node-fetch": "^3.0.0",
+    "nodemon": "^2.0.13",
+    "typescript": "^4.4.3"
+  }
+}

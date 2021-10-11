@@ -1,0 +1,14 @@
+.flexColumn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.capitalize {
+    text-transform:capitalize;
+}
+
+.flex {
+    display: flex;
+}

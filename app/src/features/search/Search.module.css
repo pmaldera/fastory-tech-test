@@ -1,0 +1,41 @@
+.searchPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.searchBar {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    flex-direction: row;
+}
+
+.searchResultsContainer {
+    display:flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.searchResultList {
+    display: flex;
+    flex-direction: column;
+}
+
+.category{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.noResult{
+    font-weight: bold;
+}
+
+.pagination {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.paginationNumber {
+    padding-left: 15px;
+    padding-right: 15px;
+}
